@@ -1,41 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a developer passionate about creating digital experiences.</p>
-    </section>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="#">Your Name</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#resume">CV/Resume</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I’m <span class="highlight">Your Name</span>.</h1>
+      <h2>Data Scientist focused on Product Analytics in the Travel Tech industry</h2>
+      <p>
+        I enjoy analyzing data, building predictive models, 
+        and driving data-driven decisions to improve user experiences.
+      </p>
+    </div>
+  </header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I'm currently working in the Travel Tech industry, 
+      applying analytics and product knowledge to improve 
+      user engagement and optimize product features. 
+      I also mentor aspiring data scientists and 
+      participate in local tech community events.
+    </p>
+    <p>
+      In my spare time, I love solving new problems with data, 
+      building personal projects, and expanding my skill set 
+      through continuous learning.
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio</p>
-    </footer>
+  <!-- CV/Resume Section -->
+  <section id="resume" class="resume-section">
+    <h2>CV/Resume</h2>
+    <p>
+      <strong>Education:</strong> [Placeholder for your degrees, institutions, etc.]
+    </p>
+    <p>
+      <strong>Experience:</strong> [Placeholder for your professional experiences, roles, etc.]
+    </p>
+    <p>
+      <a href="LINK_TO_YOUR_RESUME.pdf" target="_blank">View My Resume (PDF)</a>
+    </p>
+  </section>
+
+  <!-- Portfolio/Projects Section -->
+  <section id="portfolio" class="portfolio-section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <!-- Example project card -->
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of your project or contribution.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of your project or contribution.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>
+      <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+      <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">@yourusername</a><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank">Your LinkedIn Profile</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
