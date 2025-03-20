@@ -1,35 +1,173 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-nav ul {
-  list-style: none;
+/* 
+  Reset/normalize some default browser styles 
+  for consistency across different browsers 
+*/
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 1rem;
-  background-color: #f2f2f2;
-  padding: 1rem;
+  box-sizing: border-box;
 }
 
-nav a {
+/* 
+  BODY 
+  - Light background
+  - Use the Google Font (Open Sans) if loaded
+  - Slightly darker text color for readability 
+*/
+body {
+  background: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand a {
+  font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
   color: #333;
 }
 
-header#hero {
-  background-color: #e6f7ff;
-  padding: 2rem;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #007acc;
+}
+
+/* CONTENT CONTAINER */
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+/* HERO / INTRO SECTION */
+.hero {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-section {
-  padding: 2rem;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-footer {
+.hero h2 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #666;
+}
+
+.highlight {
+  color: #007acc;
+}
+
+/* GENERIC SECTION STYLES */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007acc;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  color: #333;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.project-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.project-card a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON (FOR VIEW RESUME LINK) */
+.button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+
+/* FOOTER */
+.footer {
   text-align: center;
   padding: 1rem;
-  background-color: #f2f2f2;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #777;
 }
