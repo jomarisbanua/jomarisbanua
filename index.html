@@ -4,77 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Data Scientist</title>
+
+  <!-- Link to your custom CSS (ensure this matches your actual file name/path) -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- (Optional) Google Font for nicer typography -->
+  <!-- Optional: Google Fonts for better typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
 </head>
 <body>
 
-  <!-- Container holds sidebar + main content -->
+  <!-- MAIN WRAPPER: Holds Sidebar + Main Content in a Flex container -->
   <div class="container">
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
-      <!-- Replace with your actual image URL -->
-      <img src="https://via.placeholder.com/200" alt="Profile Photo" class="profile-pic">
-      
-      <h1>Your Name</h1>
-      <p class="title">Data Scientist</p>
-      <p class="location">City, Country</p>
+      <div class="sidebar-inner">
+        <!-- Profile Photo -->
+        <img src="https://via.placeholder.com/200" alt="Profile Photo" class="profile-pic">
+        
+        <!-- Name & Title -->
+        <h1>Your Name</h1>
+        <p class="subtitle">Data Scientist</p>
+        <p class="location">City, Country</p>
 
-      <hr>
+        <hr>
 
-      <!-- Contact or quick links -->
-      <ul class="contact-info">
-        <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">@yourusername</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a></li>
-      </ul>
+        <!-- Contact Info -->
+        <ul class="contact-info">
+          <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">@yourusername</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a></li>
+        </ul>
 
-      <hr>
+        <hr>
 
-      <!-- Simple Nav (Optional) -->
-      <nav class="sidebar-nav">
-        <a href="#about">About Me</a>
-        <a href="#resume">CV/Resume</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <!-- Navigation Links -->
+        <nav class="sidebar-nav">
+          <a href="#about">About Me</a>
+          <a href="#resume">CV/Resume</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </aside>
 
     <!-- MAIN CONTENT -->
     <main class="content">
-      
-      <!-- ABOUT SECTION -->
       <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-          I'm currently working in the Travel Tech industry, analyzing user experiences
-          and optimizing product features. I mentor aspiring data scientists and
-          participate in local tech community events.
+          I'm currently working in the Travel Tech industry, applying analytics 
+          and product knowledge to improve user engagement and optimize product features. 
+          I also mentor aspiring data scientists and participate in local tech community events.
         </p>
         <p>
-          In my spare time, I love solving new problems with data, building personal
-          projects, and expanding my skill set through continuous learning.
+          In my spare time, I love solving new problems with data, 
+          building personal projects, and expanding my skill set through continuous learning.
         </p>
       </section>
 
-      <!-- CV/RESUME SECTION -->
       <section id="resume" class="section">
         <h2>CV/Resume</h2>
         <p><strong>Education:</strong> [Placeholder for your degrees, institutions, etc.]</p>
         <p><strong>Experience:</strong> [Placeholder for your professional experiences, roles, etc.]</p>
         <p>
-          <a href="YOUR_RESUME_LINK.pdf" target="_blank" class="resume-button">
-            View My Resume (PDF)
-          </a>
+          <a href="YOUR_RESUME.pdf" target="_blank" class="resume-button">View My Resume (PDF)</a>
         </p>
       </section>
 
-      <!-- PORTFOLIO SECTION -->
       <section id="portfolio" class="section">
         <h2>Portfolio</h2>
         <div class="portfolio-grid">
@@ -88,20 +87,19 @@
             <p>Description of your project or contribution.</p>
             <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
           </div>
-          <!-- Add more project cards as needed -->
         </div>
       </section>
 
-      <!-- CONTACT SECTION -->
       <section id="contact" class="section">
         <h2>Contact</h2>
         <p>
           <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a><br>
           <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">@yourusername</a><br>
-          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a>
+          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a>
         </p>
       </section>
     </main>
+
   </div> <!-- end .container -->
 
   <!-- FOOTER -->
