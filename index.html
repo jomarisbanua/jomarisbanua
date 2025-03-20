@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <!-- 
+    The <meta> tags and <title> tell the browser about your page:
+    - charset="UTF-8" ensures most characters (letters, symbols) display correctly.
+    - viewport helps your site be mobile-friendly (responsive).
+    - <title> is what appears in the browser tab.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My Portfolio</title>
+
+  <!-- 
+    Link to your external CSS file (style.css).
+    Make sure style.css is in the same folder as index.html.
+    If you use a folder (e.g., "css/style.css"), update the href accordingly.
+  -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 
+    NAVIGATION: A simple nav bar with links that jump to different sections
+    of the page (like "About Me", "Projects", and "Contact").
+  -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 
+    HERO/HEADER SECTION: A prominent header that welcomes visitors.
+    You can include a background image in your CSS or add an <img> here.
+  -->
+  <header id="hero">
     <h1>Welcome to My Portfolio!</h1>
     <p>Hello! I am a developer passionate about creating digital experiences.</p>
+  </header>
+
+  <!-- 
+    ABOUT SECTION: A place to share more info about yourself,
+    your background, or your interests.
+  -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      This is where you can write a short biography, list your skills,
+      or share your journey into coding or data science.
+    </p>
+  </section>
+
+  <!-- 
+    PROJECTS SECTION: Showcase your work or favorite projects.
+    You can include links to GitHub repositories, images, or live demos.
+  -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>
+      Highlight your projects here. 
+      For example:
+    </p>
+    <ul>
+      <li><strong>Project 1:</strong> <a href="https://github.com/yourusername/project1" target="_blank">Link to Repo</a></li>
+      <li><strong>Project 2:</strong> <a href="https://github.com/yourusername/project2" target="_blank">Link to Repo</a></li>
+      <!-- Add more projects as needed -->
+    </ul>
+  </section>
+
+  <!-- 
+    CONTACT SECTION: Provide ways for people to get in touch—email, social media, etc.
+  -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can reach me at: 
+      <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+      GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- 
+    FOOTER: Typically includes a copyright,
+    or any final notes you want at the bottom of every page.
+  -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
