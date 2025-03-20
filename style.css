@@ -1,4 +1,4 @@
-/* Basic resets */
+/* RESET + BASE */
 * {
   margin: 0;
   padding: 0;
@@ -9,22 +9,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f7f7f7;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Container: side-by-side layout */
+/* MAIN LAYOUT */
 .container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #fff; /* White background for the main container */
+  border: 1px solid #ddd;
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 300px;
   min-width: 250px;
-  background-color: #fff;
-  padding: 2rem;
   border-right: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.sidebar-inner {
+  padding: 2rem 1.5rem;
 }
 
 .profile-pic {
@@ -38,7 +44,7 @@ body {
   margin-bottom: 0.25rem;
 }
 
-.title {
+.subtitle {
   font-size: 1rem;
   color: #666;
   margin-bottom: 0.5rem;
@@ -46,40 +52,42 @@ body {
 
 .location {
   font-size: 0.9rem;
-  margin-bottom: 1rem;
   color: #999;
+  margin-bottom: 1rem;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+/* CONTACT INFO */
 .contact-info {
   list-style: none;
-  margin: 1rem 0;
-  padding: 0;
   line-height: 1.8;
+  margin-bottom: 1rem;
+  padding: 0;
 }
-
 .contact-info a {
   color: #007acc;
   text-decoration: none;
 }
-
 .contact-info a:hover {
   text-decoration: underline;
 }
 
-/* Sidebar nav */
+/* SIDEBAR NAV */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 1rem;
 }
-
 .sidebar-nav a {
   text-decoration: none;
   color: #007acc;
   font-weight: 600;
 }
-
 .sidebar-nav a:hover {
   text-decoration: underline;
 }
@@ -87,24 +95,22 @@ body {
 /* MAIN CONTENT */
 .content {
   flex: 1;
-  background-color: #fff;
   padding: 2rem;
 }
 
 .section {
   margin-bottom: 2rem;
 }
-
 .section h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #007acc;
   display: inline-block;
-  margin-bottom: 1rem;
   padding-bottom: 0.25rem;
   color: #333;
 }
 
-/* Resume Button */
+/* RESUME BUTTON */
 .resume-button {
   display: inline-block;
   background-color: #007acc;
@@ -115,34 +121,29 @@ body {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
 .resume-button:hover {
   background-color: #005fa3;
 }
 
-/* Portfolio Grid */
+/* PORTFOLIO GRID */
 .portfolio-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
-
 .project-card {
-  background: #fafafa;
+  background-color: #fafafa;
   border: 1px solid #ddd;
   padding: 1rem;
   border-radius: 4px;
 }
-
 .project-card h3 {
   margin-bottom: 0.5rem;
 }
-
 .project-card p {
-  color: #555;
   margin-bottom: 0.5rem;
+  color: #555;
 }
-
 .project-card a {
   color: #007acc;
   text-decoration: none;
@@ -154,8 +155,8 @@ body {
 /* FOOTER */
 .footer {
   text-align: center;
-  background-color: #fff;
   padding: 1rem;
+  background-color: #fff;
   border-top: 1px solid #ddd;
   margin-top: 1rem;
 }
