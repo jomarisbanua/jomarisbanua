@@ -1,120 +1,130 @@
-/* 
-  Reset/normalize some default browser styles 
-  for consistency across different browsers 
-*/
+/* Basic resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 
-  BODY 
-  - Light background
-  - Use the Google Font (Open Sans) if loaded
-  - Slightly darker text color for readability 
-*/
 body {
-  background: #f7f7f7;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
   color: #333;
-  line-height: 1.6;
 }
 
-/* NAVBAR */
-.navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 1rem;
-}
-
-.nav-container {
-  max-width: 1100px;
-  margin: 0 auto;
+/* Container: side-by-side layout */
+.container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-brand a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #333;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav-links li a:hover {
-  color: #007acc;
-}
-
-/* CONTENT CONTAINER */
-.content-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 300px;
+  min-width: 250px;
   background-color: #fff;
+  padding: 2rem;
+  border-right: 1px solid #ddd;
 }
 
-/* HERO / INTRO SECTION */
-.hero {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-.hero h2 {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 1rem;
+.sidebar h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
 }
 
-.hero p {
+.title {
   font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.8;
   color: #666;
+  margin-bottom: 0.5rem;
 }
 
-.highlight {
+.location {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.contact-info {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.contact-info a {
   color: #007acc;
+  text-decoration: none;
 }
 
-/* GENERIC SECTION STYLES */
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+}
+
 .section {
   margin-bottom: 2rem;
 }
 
 .section h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
   border-bottom: 2px solid #007acc;
   display: inline-block;
+  margin-bottom: 1rem;
   padding-bottom: 0.25rem;
   color: #333;
 }
 
-/* PORTFOLIO GRID */
+/* Resume Button */
+.resume-button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #005fa3;
+}
+
+/* Portfolio Grid */
 .portfolio-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .project-card {
@@ -129,45 +139,27 @@ body {
 }
 
 .project-card p {
-  margin-bottom: 0.5rem;
   color: #555;
+  margin-bottom: 0.5rem;
 }
 
 .project-card a {
   color: #007acc;
   text-decoration: none;
 }
-
 .project-card a:hover {
   text-decoration: underline;
-}
-
-/* BUTTON (FOR VIEW RESUME LINK) */
-.button {
-  display: inline-block;
-  background-color: #007acc;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #005fa3;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
+  background-color: #fff;
   padding: 1rem;
-  background: #fff;
   border-top: 1px solid #ddd;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
-
 .footer p {
-  font-size: 0.9rem;
   color: #777;
+  font-size: 0.9rem;
 }
