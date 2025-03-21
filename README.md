@@ -113,7 +113,7 @@ Feel free to poke around my data analysis, machine learning and deep learning pr
 
 | 📚‍ [UK Educational Attainment of Small vs Large Towns](https://github.com/jomarisbanua/Education-Attainment-in-UK)| 🚙 [Car Prices Prediction]()|
 | :-:| :-:| 
-| [<img src = "" width = 500 height = 300/>](https://github.com/suhasmaddali/Washington-Bike-Demand-Prediction)| [<img src="" width = 500 height = 300/>]()
+| [<img src = "https://github.com/jomarisbanua/jomarisbanua/blob/main/edu_attainment_smallvslargetowns.webp" width = 500 height = 300/>](https://github.com/suhasmaddali/Washington-Bike-Demand-Prediction)| [<img src="" width = 500 height = 300/>]()
 
 <hr style="border:0.01px solid blue">
 
