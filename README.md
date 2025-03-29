@@ -111,16 +111,6 @@ Feel free to poke around my data analysis, machine learning and deep learning pr
 
 <h2 align = "center"> 🖥 My Data Science Projects </h2> 
 
-| 📚‍ [UK Educational Attainment of Small vs Large Towns](https://github.com/jomarisbanua/Education-Attainment-in-UK)| 🚙 [Car Prices Prediction]()|
-| :-:| :-:| 
-| [<img src = "https://github.com/jomarisbanua/jomarisbanua/blob/main/Images/edu_attainment_smallvslargetowns.webp" width = 500 height = 300/>](https://github.com/jomarisbanua/Education-Attainment-in-UK)| [<img src="" width = 500 height = 300/>]()
+| 📚‍ [UK Educational Attainment of Small vs Large Towns](https://github.com/jomarisbanua/Education-Attainment-in-UK)|
 
-<hr style="border:0.01px solid blue">
-
-<h2 align = "center"> 🖥 My Machine Learning Projects</h2> 
-
-| 📚‍ [UK Educational Attainment of Small vs Large Towns](https://github.com/jomarisbanua/Education-Attainment-in-UK)| 🚙 [Car Prices Prediction]()|
-| :-:| :-:| 
-| [<img src = "" width = 500 height = 300/>](https://github.com/suhasmaddali/Washington-Bike-Demand-Prediction)| [<img src="" width = 500 height = 300/>]()
-
-<hr style="border:0.01px solid blue">
+| [<img src = "https://github.com/jomarisbanua/jomarisbanua/blob/main/Images/edu_attainment_smallvslargetowns.webp" width = 500 height = 300/>](https://github.com/jomarisbanua/Education-Attainment-in-UK)| 
